@@ -1,3 +1,156 @@
-body{
-  background-color: bisque;
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
+
+:root {
+  --footer-color:rgb(40,41,41);
+  --background-top: #090b12;
+  --background-container:rgb(21,24,34);
+
+}
+
+.debug{
+  background-color: rgba(64, 198, 153, 0.826);
+  border:1px solid black
+}
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*********************** UTILITY ***********************/
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+/********* altezze *********/
+.h100 {
+  height: 100%;
+}
+
+.h80 {
+  height: 80px;
+}
+
+.h90 {
+  height:90px
+}
+
+/********** larghezze **********/
+.w100 {
+  width: 100%;
+}
+
+.w250 {
+  width: 250px;
+}
+
+
+
+/********* padding *********/
+.pl10 {
+  padding-left: 10px;
+}
+
+.pb35{
+  padding-bottom: 35px;
+}
+
+.pb20{
+  padding-bottom: 20px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.pt5 {
+  padding-top: 5px;
+}
+
+.gap {
+  gap:10px
+}
+
+
+/********** font-size **********/
+.h2-45 {
+  font-size: 45px;
+}
+
+
+/********** font-style **********/
+.bold {
+  font-weight: bold;
+}
+
+/********** color **********/
+.white{
+  color: white;
+}
+
+.gray {
+  color:rgb(118,120,124);
+}
+/********** posicion **********/
+
+.text-cen {
+  text-align: center;
+}
+
+
+
+
+
+
+
+/***********c MAIN ***********************/
+
+.container {
+  height: calc(100vh - 90px);
+  background-color:var(--background-container);
+}
+
+.content {
+  overflow: auto;
+  width: calc(100% - 250px);
+}
+
+.library {
+ height: calc(100% - 80px);
+ overflow: auto;
+}
+
+.top {
+  background-color: var(--background-top);
+}
+
+
+
+/************* CARD *************/
+.card {
+  width: calc(100% / 6 - 10px);
+}
+
+.card img {
+  width: 100%;
+}
+
+
+
+
+
+
+/*********************** FOOTER ***********************/
+footer {
+  min-height: 90px;
+  background-color: var(--footer-color);
+}
+

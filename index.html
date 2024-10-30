@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
   <title>SPOTIFY WEB</title>
 </head>
 
@@ -13,105 +18,204 @@
   <main>
     <div class="container debug d-flex">
 
-      <aside class="debug h100 w250">
+      <aside class="debug h100 w250 pl20">
 
         <div class="library">
-         
+         <ul>
+
+          <li>
+            <a href="#">
+              <img class="ico" src="./img/logo.svg" alt="logo">
+              <img class="fav" src="./img/logo-small.svg" alt="favicon">
+            </a>
+          </li>
+
+          <li>
+            <img  class="w30" src="./img/home.svg" alt="home">
+            <a class="ml5" href="#">
+              <span class="label gray bold">
+                Home
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <img  class="w30" src="./img/search.svg" alt="search">
+            <a class= "ml5" href="#">
+              <span class="label gray bold">
+                Cerca
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <img class="w30" src="./img/libreria.svg" alt="libreria">
+            <a  class="ml5" href="#">
+              <span class="label gray bold">
+                  La tua libreria
+               </span>
+            </a>
+          </li>  
+         </ul>
+
+          <div class="none" >
+            <h6 class="white h6-16"> PLAYLIST</h6>
+
+            
+            <i class="fa-solid fa-plus plus p12 mt10 "></i>
+            <span class="label gray bold ml5">
+              Crea Playlist
+            </span>
 
 
+            <ul>
+              <li>
+                <a class="ml0" href="#">
+                  <span class="label gray bold">
+                   Nome Playlist
+                  </span>
+                </a>
+              </li>
 
+              <li>
+                <a class="ml0" href="#">
+                  <span class="label gray bold">
+                   Nome Playlist
+                  </span>
+                </a>
+              </li>
 
+              <li>
+                <a class="ml0" href="#">
+                  <span class="label gray bold">
+                   Nome Playlist
+                  </span>
+                </a>
+              </li>
 
+              <li>
+                <a class="ml0" href="#">
+                  <span class="label gray bold">
+                   Nome Playlist
+                  </span>
+                </a>
+              </li>
 
+              <li>
+                <a class="ml0" href="#">
+                  <span class="label gray bold">
+                   Nome Playlist
+                  </span>
+                </a>
+              </li>
 
+              <li>
+                <a class="ml0" href="#">
+                  <span class="label gray bold">
+                   Nome Playlist
+                  </span>
+                </a>
+              </li>
 
-
+              <li>
+                <a class="ml0" href="#">
+                  <span class="label gray bold">
+                   Nome Playlist
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div> <!-- none -->
 
         </div> <!-- div del library -->
 
 
         <div class="name h80 debug">
-        
+          <a class="ml0" href="#">
+            <img  class="white w30"src="./img/download.svg" alt="">
+            <span class="label gray bold ml5">
+             Installa app
+             </span>
+          </a>
+          
+
+          <hr class="mt10 mb10 w200" >
 
 
-
-
-
-
-
-
+          <img class="w30 profile" src="./img/profile.svg" alt="profile">
+          <h6 class="white">
+            Jonh Doe
+          </h6>
         </div> <!-- div name -->
 
-       
       </aside> 
 
 
       <div class="content h100">
 
         <div class="top debug h90">
-          UPGRATE
+          <a class="button bold href="#">
+            EFFETTUA L'UPGRATE
+          </a>
         </div>
 
-
-
         <div class="nav">
-          <ul>
+          <ul class="d-flex">
             <li>
-              <a href="#">
-
-              </a>
+              <a  class="bold gray" href="#">
+               IN EVIDENZA
+              </a> 
             </li>
 
             <li>
-              <a href="#">
-
-              </a>
+              <a  class="bold gray" href="#">
+               PODCAST
+              </a> 
             </li>
-            
+ 
             <li>
-              <a href="#">
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-
-              </a>
+              <a  class="bold gray" href="#">
+               CLASSIFICHE
+              </a> 
             </li>
 
             <li>
-              <a href="#">
-
-              </a>
+              <a  class="bold gray" href="#">
+               GENERI E MOOD
+              </a> 
             </li>
 
             <li>
-              <a href="#">
-
-              </a>
+              <a  class="bold gray" href="#">
+               NUOVE USCITE
+              </a> 
             </li>
 
+            <li>
+              <a  class="bold gray" href="#">
+               SCOPRI
+              </a> 
+            </li>
           </ul>
 
 
         </div> <!-- div nav -->
 
         
-        <div class="container-card pl10">
+        <div class="container-card pl10 pb80">
 
           <h2 class="pb35 h2-45 white">
             Recently played
           </h2>
           <div class="row d-flex gap">
 
-            <!-- prima -->
+          <!-- prima -->
             <div class="card debug">
 
               <img src="./img/metal_lifting.jpg" alt="metal_lifting">
 
               <div class="text">
-                <p class="bold pt20 white text-cen"> 
+                <p class="bold pt20 white text-cen p23"> 
                   Heavy Metal
                 </p>
 
@@ -120,18 +224,17 @@
                 </span>
               </div>
 
-            </div> <!-- div card -->
+            </div> 
+          <!-- div card -->
 
 
-
-
-           <!-- seconda -->
+          <!-- seconda -->
             <div class="card debug">
 
               <img src="./img/stranger.jpeg" alt="Stranger">
 
               <div class="text">
-                <p class="bold pt20 white text-cen"> 
+                <p class="bold pt20 white text-cen p23"> 
                   Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)
                 </p>
 
@@ -140,17 +243,17 @@
                 </span>
               </div>
 
-            </div> <!-- div card -->
-          
+            </div> 
+          <!-- div card -->
 
 
-            <!-- terza -->
+          <!-- terza -->
             <div class="card debug">
 
               <img src="./img/aquietplace.jpeg" alt="aquietplace">
 
               <div class="text">
-                <p class="bold pt20 white text-cen"> 
+                <p class="bold pt20 white text-cen p23"> 
                   A quiet place
                 </p>
 
@@ -159,18 +262,17 @@
                 </span>
               </div>
 
-            </div> <!-- div card -->
+            </div> 
+          <!-- div card -->
 
 
-
-
-            <!-- quarta -->
+          <!-- quarta -->
             <div class="card debug">
 
               <img src="./img/split.jpeg" alt="split">
 
               <div class="text">
-                <p class="bold pt20 white text-cen"> 
+                <p class="bold pt20 white text-cen p23"> 
                   Split
                 </p>
 
@@ -179,18 +281,17 @@
                 </span>
               </div>
 
-            </div> <!-- div card -->
+            </div> 
+          <!-- div card -->
 
 
-
-
-           <!-- quinta -->
+          <!-- quinta -->
             <div class="card debug">
 
               <img src="./img/cure.jpeg" alt="cure">
 
               <div class="text">
-                <p class="bold pt20 white text-cen"> 
+                <p class="bold pt20 white text-cen p23"> 
                   A cure for
                 </p>
 
@@ -199,18 +300,17 @@
                 </span>
              </div>
 
-            </div> <!-- div card -->
+            </div> 
+          <!-- div card -->
 
 
-
-
-           <!-- sesta-->
+          <!-- sesta-->
             <div class="card debug">
  
               <img src="./img/sinister.jpeg" alt="sinister">
 
               <div class="text">
-                <p class="bold pt20 white text-cen"> 
+                <p class="bold pt20 white text-cen p23"> 
                   Sinister
                 </p>
 
@@ -219,47 +319,174 @@
                 </span>
               </div>
 
-            </div> <!-- div card -->
+            </div> 
+          <!-- div card -->
+
+         </div> <!-- div row -->
 
 
+          <!--SECONDO CONTAINER  -->
 
-
-
-
+         <h2 class="h2-45 white pt40">
+            Creato per John Doe
+         </h2>
           
+         <span class="bold gray d-block pb20 pt5">
+          Più ascolti, più accurati saranno i suggerimenti
+         </span>
+
+        <div class="row d-flex gap">
+
+          <!-- prima -->
+            <div class="card debug">
+
+              <img src="./img/radar.jpeg" alt="radar">
+
+              <div class="text">
+                <p class="bold pt20 white text-cen p23 pb20"> 
+                  Release Radar
+                </p>
+              </div>
+
+            </div> 
+          <!-- div card -->
 
 
+          <!-- seconda -->
+          <div class="card debug">
+
+            <img src="./img/mixdaily.jpeg" alt="mixdaily">
+
+            <div class="text">
+              <p class="bold pt20 white text-cen p23 pb20"> 
+                Daily Mix 1
+              </p>
+            </div>
+
+          </div> 
+          <!-- div card -->
+        </div> <!-- div row -->
 
 
+          <!--TERZO CONTAINER  -->
+
+         <h2 class="h2-45 white pt40">
+            Artisti più popolari
+         </h2>
+          
+         <span class="bold gray d-block pb20 pt5">
+          Più ascolti, più accurati saranno i suggerimenti
+         </span>
+
+        <div class="row d-flex gap">
+
+          <!-- prima -->
+            <div class="card debug">
+
+              <img class="border" src="./img/youg.jpeg" alt="youg">
+
+              <div class="text">
+                <p class="bold pt20 white text-cen p23 pb20"> 
+                  Luna del Ray
+                </p>
+              </div>
+
+            </div> 
+          <!-- div card -->
 
 
+          <!-- seconda -->
+          <div class="card debug">
 
-          </div> <!-- div row -->
+            <img class="border" src="./img/einaudi.jpeg" alt="Enaudi">
 
+            <div class="text">
+              <p class="bold pt20 white text-cen p23 pb20"> 
+                Ludovico Enaudi
+              </p>
+            </div>
 
+          </div> 
+          <!-- div card -->
+        </div> <!-- div row -->
+      
         </div> <!-- div del container-card -->
 
-
-
-
-
-
-
-
-
-      
-       
-
-      </div> <!-- div del content -->
-
-
-     
+     </div> <!-- div del content -->
     </div><!-- div del container -->
   </main>
 
 
   <footer>
-   FOOTER
+    <div class="d-flex">
+       <div class="music debug pl20 pt20 pb20 d-flex">
+           <img src="./img/sinister.jpeg" alt="sinister">
+
+            <div>
+              <h6 class="white pl10"> Sinister</h6>
+              <span class="gray pl10">Brano nome</span>
+            </div>
+    
+           <i class="fa-regular fa-heart pl20 pt10 pb10 gray"></i>
+           <i class="fa-solid fa-folder pt10 pb10 pl10 gray"></i>
+
+        </div> <!-- music -->
+        
+
+         <div class="playbar debug">
+            <i class="fa-solid fa-shuffle white"></i>
+            <i class="fa-solid fa-backward-step white"></i>
+            <i class="fa-regular fa-circle-play white"></i>
+            <i class="fa-solid fa-forward-step white"></i>
+            <i class="fa-solid fa-rotate-right white"></i>
+
+            <div>
+              <hr class="graybar">
+              <hr class="gray-bar">
+            </div>
+
+
+            
+         </div>  <!-- playbar -->
+
+          
+          
+
+
+          <div class="music debug pl20 pt20 pb20 d-flex">
+            <img src="./img/sinister.jpeg" alt="sinister">
+ 
+             <div>
+               <h6 class="white pl10"> Sinister</h6>
+               <span class="gray pl10">Brano nome</span>
+             </div>
+     
+            <i class="fa-regular fa-heart pl20 pt10 pb10 gray"></i>
+            <i class="fa-solid fa-folder pt10 pb10 pl10 gray"></i>
+ 
+         </div> <!-- music -->
+          
+          
+
+        </div>
+
+      
+      
+      
+      
+      
+      
+      </div>
+      
+      
+      
+        
+
+
+
+
+   
+    
   </footer>
   
 </body>

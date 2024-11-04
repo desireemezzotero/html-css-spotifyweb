@@ -1,0 +1,85 @@
+@media (max-width:1100px) {
+  .row  {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(100% / 4 - 10px);
+  }
+}
+
+@media (max-width:970px) {
+  .nav{ 
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width:700px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(100% / 2 - 10px);
+  }
+
+  .music i {
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  .heart {
+    padding-top: 0px;
+  }
+
+  .folder {
+    padding-top:7px;
+    padding-left: 19px;
+  }
+}
+
+@media (max-width:600px) {
+
+  .label {
+    display:none
+  }
+
+  .none {
+    display:none
+  }
+
+  .ico {
+    display:none
+  }
+
+  .fav {
+    display:block;
+  }
+
+  aside {
+    width:50px
+  }
+
+  .content {
+    width: calc(100% - 50px);
+  }
+
+  .name h6 {
+    display:none;
+    margin-left:6px;
+  }
+
+  .name a img {
+    width: 15px;
+    margin-left: 2px;
+    margin-bottom: 15px;
+  }
+  
+}
+

@@ -11,10 +11,11 @@
 
 }
 
-.debug{
+/* .debug{
   background-color: rgba(64, 198, 153, 0.826);
   border:1px solid black
 }
+ */
 
 main , footer {
   font-family: Arial, Helvetica, sans-serif;
@@ -44,6 +45,10 @@ main , footer {
 }
 
 /*** larghezze ***/
+.w20 {
+  width: 20px;
+}
+
 .w30 {
   width: 30px;
 }
@@ -124,6 +129,7 @@ main , footer {
   margin-top: 10px;
 }
 
+
 .mb10{
   margin-bottom: 10px;
 }
@@ -131,10 +137,6 @@ main , footer {
 /*** font-size ***/
 .h2-45 {
   font-size: 45px;
-}
-
-.p23 {
-  font-size: 23px;
 }
 
 .h6-16 {
@@ -167,6 +169,9 @@ main , footer {
 /***************** MAIN ***********************/
 
 /*** button ***/
+aside {
+  width:250px;
+}
 
 .top {
   position: relative;
@@ -208,7 +213,7 @@ main , footer {
 
 
 /*** Library ***/
-.library ul li a img {
+.ico {
   width: 130px;
 }
 
@@ -266,6 +271,8 @@ ul li a {
   margin: 10px;
 }
 
+/* nav */
+
 
 
 
@@ -273,6 +280,7 @@ ul li a {
 /************* CARD *************/
 .card {
   width: calc(100% / 6 - 10px);
+  position: relative;
 }
 
 .card img {
@@ -283,6 +291,7 @@ ul li a {
   border-radius: 50%;
 }
 
+ 
 /*********************** FOOTER ***********************/
 footer {
   min-height: 90px;
@@ -297,6 +306,21 @@ footer {
   width: calc(100% - 500px);
 }
 
+.play {
+  margin:20px auto;
+  width: 15rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.minute {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin: 0 auto;
+}
+
 .music img {
   height: 40px;
   vertical-align: middle;
@@ -308,22 +332,103 @@ footer {
 }
 
 .graybar {
-  font-size: 2px;
-  width:60%;
-  border-radius:20px;
-  color: rgb(118,120,124);
-  margin-top: 50px;
-  margin-left: 20% ;
-  margin-right: 20% ;
+  background-color: rgb(118,120,124);
+  border: 2px solid rgb(118,120,124);
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
-.gray-bar {
-  font-size: 2px;
-  width:20%;
-  border-radius:20px;
+
+.whitebar {
+  background-color: white;
+  width: 30%;
   color: white;
-  margin-top: 50px;
-  margin-left: 20% ;
-  margin-right: 20% 
+  border: 2px solid white;
 }
 
+/* parte di destra */
+.sound {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sound-graybar {
+  background-color: rgb(118,120,124);
+  border: 2px solid rgb(118,120,124);
+  width: 50%;
+  margin: 26px auto;
+  border-radius: 20px;
+  height: 2px;
+}
+
+.sound-whitebar {
+  background-color: white;
+  border: 2px solid white;
+  width: 50%;
+  border-radius: 20px;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
+/* HOVER */
+
+.card img:hover {
+  opacity: .7;
+}
+
+.card img:hover::before{
+  content: '\f144';
+  position: absolute;
+  top:98px;
+  left:100px;
+  font-size: 70px;
+  color:white
+}
+
+
+.button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.nav ul li a:hover {
+  color: white;
+}
+
+.label:hover {
+  color:white
+}
+
+footer .music span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer .music i:hover{
+  color:white
+}
+
+.playbar .play i:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.graybar:hover {
+  cursor: pointer;
+}
+
+.whitebar:hover {
+  background-color: greenyellow;
+  border-color: greenyellow;
+}
+
+.sound-graybar:hover {
+  cursor: pointer;
+}
+
+.sound-whitebar:hover{
+  background-color: greenyellow;
+  border-color: greenyellow;
+}

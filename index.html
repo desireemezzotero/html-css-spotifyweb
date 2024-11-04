@@ -10,6 +10,8 @@
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+  
+
   <title>SPOTIFY WEB</title>
 </head>
 
@@ -18,7 +20,7 @@
   <main>
     <div class="container debug d-flex">
 
-      <aside class="debug h100 w250 pl20">
+      <aside class="debug h100  pl20">
 
         <div class="library">
          <ul>
@@ -26,7 +28,7 @@
           <li>
             <a href="#">
               <img class="ico" src="./img/logo.svg" alt="logo">
-              <img class="fav" src="./img/logo-small.svg" alt="favicon">
+              <img class="fav w30" src="./img/logo-small.svg" alt="favicon">
             </a>
           </li>
 
@@ -60,13 +62,11 @@
 
           <div class="none" >
             <h6 class="white h6-16"> PLAYLIST</h6>
-
             
             <i class="fa-solid fa-plus plus p12 mt10 "></i>
             <span class="label gray bold ml5">
               Crea Playlist
             </span>
-
 
             <ul>
               <li>
@@ -139,10 +139,10 @@
           </a>
           
 
-          <hr class="mt10 mb10 w200" >
+          <hr class="mt10 mb10 w200 none" >
 
 
-          <img class="w30 profile" src="./img/profile.svg" alt="profile">
+          <img class="w20 profile" src="./img/profile.svg" alt="profile">
           <h6 class="white">
             Jonh Doe
           </h6>
@@ -213,9 +213,10 @@
             <div class="card debug">
 
               <img src="./img/metal_lifting.jpg" alt="metal_lifting">
+             
 
               <div class="text">
-                <p class="bold pt20 white text-cen p23"> 
+                <p class="bold pt20 white text-cen"> 
                   Heavy Metal
                 </p>
 
@@ -234,7 +235,7 @@
               <img src="./img/stranger.jpeg" alt="Stranger">
 
               <div class="text">
-                <p class="bold pt20 white text-cen p23"> 
+                <p class="bold pt20 white text-cen"> 
                   Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)
                 </p>
 
@@ -253,7 +254,7 @@
               <img src="./img/aquietplace.jpeg" alt="aquietplace">
 
               <div class="text">
-                <p class="bold pt20 white text-cen p23"> 
+                <p class="bold pt20 white text-cen"> 
                   A quiet place
                 </p>
 
@@ -272,7 +273,7 @@
               <img src="./img/split.jpeg" alt="split">
 
               <div class="text">
-                <p class="bold pt20 white text-cen p23"> 
+                <p class="bold pt20 white text-cen"> 
                   Split
                 </p>
 
@@ -291,7 +292,7 @@
               <img src="./img/cure.jpeg" alt="cure">
 
               <div class="text">
-                <p class="bold pt20 white text-cen p23"> 
+                <p class="bold pt20 white text-cen"> 
                   A cure for
                 </p>
 
@@ -310,7 +311,7 @@
               <img src="./img/sinister.jpeg" alt="sinister">
 
               <div class="text">
-                <p class="bold pt20 white text-cen p23"> 
+                <p class="bold pt20 white text-cen"> 
                   Sinister
                 </p>
 
@@ -343,7 +344,7 @@
               <img src="./img/radar.jpeg" alt="radar">
 
               <div class="text">
-                <p class="bold pt20 white text-cen p23 pb20"> 
+                <p class="bold pt20 white text-cen  pb20"> 
                   Release Radar
                 </p>
               </div>
@@ -358,7 +359,7 @@
             <img src="./img/mixdaily.jpeg" alt="mixdaily">
 
             <div class="text">
-              <p class="bold pt20 white text-cen p23 pb20"> 
+              <p class="bold pt20 white text-cen pb20"> 
                 Daily Mix 1
               </p>
             </div>
@@ -386,7 +387,7 @@
               <img class="border" src="./img/youg.jpeg" alt="youg">
 
               <div class="text">
-                <p class="bold pt20 white text-cen p23 pb20"> 
+                <p class="bold pt20 white text-cen pb20"> 
                   Luna del Ray
                 </p>
               </div>
@@ -401,7 +402,7 @@
             <img class="border" src="./img/einaudi.jpeg" alt="Enaudi">
 
             <div class="text">
-              <p class="bold pt20 white text-cen p23 pb20"> 
+              <p class="bold pt20 white text-cen pb20"> 
                 Ludovico Enaudi
               </p>
             </div>
@@ -419,7 +420,7 @@
 
   <footer>
     <div class="d-flex">
-       <div class="music debug pl20 pt20 pb20 d-flex">
+         <div class="music debug pl20 pt20 pb20 d-flex">
            <img src="./img/sinister.jpeg" alt="sinister">
 
             <div>
@@ -427,67 +428,60 @@
               <span class="gray pl10">Brano nome</span>
             </div>
     
-           <i class="fa-regular fa-heart pl20 pt10 pb10 gray"></i>
-           <i class="fa-solid fa-folder pt10 pb10 pl10 gray"></i>
 
+            <div>
+              <i class="heart fa-regular fa-heart pl20 pt10 gray "></i>
+              <i class=" folder fa-regular fa-folder pt10 pl10 gray"></i>
+            </div>
+          
         </div> <!-- music -->
         
 
-         <div class="playbar debug">
+        <div class="playbar">
+          <div class="play debug"> 
             <i class="fa-solid fa-shuffle white"></i>
             <i class="fa-solid fa-backward-step white"></i>
             <i class="fa-regular fa-circle-play white"></i>
             <i class="fa-solid fa-forward-step white"></i>
             <i class="fa-solid fa-rotate-right white"></i>
-
-            <div>
-              <hr class="graybar">
-              <hr class="gray-bar">
-            </div>
-
-
-            
-         </div>  <!-- playbar -->
-
-          
-          
-
-
-          <div class="music debug pl20 pt20 pb20 d-flex">
-            <img src="./img/sinister.jpeg" alt="sinister">
- 
-             <div>
-               <h6 class="white pl10"> Sinister</h6>
-               <span class="gray pl10">Brano nome</span>
-             </div>
-     
-            <i class="fa-regular fa-heart pl20 pt10 pb10 gray"></i>
-            <i class="fa-solid fa-folder pt10 pb10 pl10 gray"></i>
- 
-         </div> <!-- music -->
-          
-          
-
-        </div>
-
-      
-      
-      
-      
-      
-      
-      </div>
-      
-      
-      
+          </div> <!-- div play -->
         
 
+          <div>
+           
+            <div class="graybar">
+              <div class="whitebar">            
+              </div>
+            </div>
 
+            <div class="minute" >
+              <span class="white bold">0.25</span>
+              <span class="white bold">4.35</span>
+            </div>
+            
+            
 
+          </div>
+          
 
-   
-    
+            
+        </div>  <!-- playbar -->
+
+          
+        <div class="music debug pl20 pt20 pb20 d-flex">
+            <div class="sound d-flex debug pt20 pb20">
+             <i class="fa-solid fa-list white"></i>
+             <i class="fa-solid fa-display white"></i>
+             <i class="fa-solid fa-volume-high white"></i>
+            </div>
+
+            <div class="sound-graybar d-flex">
+              <div class="sound-whitebar d-flex">
+              </div>
+            </div>
+         </div> <!-- music -->
+        </div>     
+      </div>
   </footer>
-  
 </body>
 </html>

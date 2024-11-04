@@ -45,6 +45,21 @@
 }
 
 @media (max-width:600px) {
+  .library{
+    height:80%
+  }
+
+  .library ul li a {
+    margin:0px
+  }
+
+  .library ul li {
+    margin-top: 10px;
+  }
+
+  .library ul li img {
+    width:25px;
+  }
 
   .label {
     display:none
@@ -54,16 +69,22 @@
     display:none
   }
 
-  .ico {
+  .logo .ico {
     display:none
   }
 
-  .fav {
+  .logo .fav {
     display:block;
+    margin-bottom: 20px;
   }
 
   aside {
-    width:50px
+    width:50px;
+    padding-left:12px;
+  }
+
+  .name hr {
+    display:none
   }
 
   .content {

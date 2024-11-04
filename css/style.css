@@ -14,8 +14,7 @@
 /* .debug{
   background-color: rgba(64, 198, 153, 0.826);
   border:1px solid black
-}
- */
+}  */
 
 main , footer {
   font-family: Arial, Helvetica, sans-serif;
@@ -129,10 +128,10 @@ main , footer {
   margin-top: 10px;
 }
 
-
 .mb10{
   margin-bottom: 10px;
 }
+
 
 /*** font-size ***/
 .h2-45 {
@@ -158,25 +157,44 @@ main , footer {
 }
 
 
-
 /*** position ***/
 
 .text-cen {
   text-align: center;
 }
 
+/*** decoration ul and a ***/
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  justify-content: center;
+}
+
+
+ul li a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+
 
 /***************** MAIN ***********************/
 
 /*** button ***/
-aside {
-  width:250px;
-}
 
 .top {
   position: relative;
   opacity: .8;
   position: sticky;
+  background-color: var(--background-top);
 }
 
 .button {
@@ -191,7 +209,6 @@ aside {
   bottom: 30px;
 }
 
-
 .container {
   height: calc(100vh - 90px);
   background-color:var(--background-container);
@@ -202,32 +219,33 @@ aside {
   width: calc(100% - 250px);
 }
 
-.library {
- height: calc(100% - 80px);
- overflow: auto;
+
+/*** ASIDE ***/
+aside {
+  padding-left: 20px;
+  width:250px;
 }
 
-.top {
-  background-color: var(--background-top);
+
+.logo .ico {
+  width:65%
 }
 
-
-/*** Library ***/
-.ico {
-  width: 130px;
-}
-
-.fav{
+.logo .fav{
   display: none;
 }
 
-
-.plus {
-  background-color:rgb(118,120,124);
+.none {
+  height: calc(100% - 320px);
 }
 
-.name a {
-  text-decoration: none;
+.list-none {
+  overflow: auto;
+  height: 80%;
+}
+
+.crea {
+  background-color:rgb(118,120,124);
 }
 
 .name a img {
@@ -253,28 +271,6 @@ aside {
 .library img {
   vertical-align: middle;
 }
-
-/*** LIST ***/
-ul li {
-  list-style: none;
-  margin-top:20px;
-  margin-bottom: 20px;
-}
-
-ul {
-  justify-content: center;
-}
-
-
-ul li a {
-  text-decoration: none;
-  margin: 10px;
-}
-
-/* nav */
-
-
-
 
 
 /************* CARD *************/

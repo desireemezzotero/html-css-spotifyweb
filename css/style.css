@@ -294,27 +294,58 @@ footer {
   background-color: var(--footer-color);
 }
 
-.music {
-  width: 250px;
-}
-
-.playbar {
-  width: calc(100% - 500px);
-}
-
-.play {
-  margin:20px auto;
-  width: 15rem;
-  display: flex;
-  justify-content: space-around;
-  font-size: 18px;
-}
-
-.minute {
-  display: flex;
+.footer div {
   justify-content: space-between;
-  width: 55%;
+  align-items: center;
+  height: 100%;
+}
+
+/* CENTRAL */
+.playbar {
+  width: 70%;
+  height:100%;
+  padding-top: 30px;
+}
+
+.control ul {
+  justify-content: center;
+  padding-bottom: 10px;
+} 
+
+.control ul li {
+  margin: 0 10px;
+}
+
+.footer .elapse > div {
+  justify-content: space-between;
+}
+
+.graybar {
+  background-color: rgb(118,120,124);
+  border: 2px solid rgb(118,120,124);
+  width: 50%;
   margin: 0 auto;
+  border-radius: 20px;
+  height:2px;
+}
+
+.whitebar {
+  background-color: white;
+  width: 30%;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-top: -2px;
+  margin-left:-1px;
+  height:2px;
+}
+
+
+/* SX */
+
+.music {
+  padding-top: 30px;
+  width: calc(100% - 70%);
 }
 
 .music img {
@@ -327,34 +358,21 @@ footer {
   font-size: 15px;
 }
 
-.graybar {
-  background-color: rgb(118,120,124);
-  border: 2px solid rgb(118,120,124);
-  width: 50%;
-  margin: 0 auto;
-  border-radius: 20px;
+
+/* DX */
+
+.dx {
+ justify-content: center;
 }
-
-
-.whitebar {
-  background-color: white;
-  width: 30%;
-  color: white;
-  border: 2px solid white;
-}
-
-/* parte di destra */
-.sound {
-  width: 45%;
-  display: flex;
-  justify-content: space-between;
+.sound i {
+  margin-right: 15px;
 }
 
 .sound-graybar {
   background-color: rgb(118,120,124);
   border: 2px solid rgb(118,120,124);
-  width: 50%;
-  margin: 26px auto;
+  width: 160px;
+  margin-top: 26px;
   border-radius: 20px;
   height: 2px;
 }
@@ -362,7 +380,7 @@ footer {
 .sound-whitebar {
   background-color: white;
   border: 2px solid white;
-  width: 50%;
+  width: 50px;
   border-radius: 20px;
   margin-top: -2px;
   margin-left: -2px;

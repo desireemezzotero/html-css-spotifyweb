@@ -6,6 +6,21 @@
   .card {
     width: calc(100% / 4 - 10px);
   }
+
+  .music i {
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  .heart {
+    padding-top: 0px;
+    padding-left: 4px;
+  }
+
+  .folder {
+    padding-top:7px;
+    padding-left: 4px;
+  }
 }
 
 @media (max-width:970px) {
@@ -28,21 +43,9 @@
   .card {
     width: calc(100% / 2 - 10px);
   }
-
-  .music i {
-    display:flex;
-    flex-wrap: wrap;
-  }
-
-  .heart {
-    padding-top: 0px;
-  }
-
-  .folder {
-    padding-top:7px;
-    padding-left: 19px;
-  }
 }
+
+
 
 @media (max-width:600px) {
   .library{

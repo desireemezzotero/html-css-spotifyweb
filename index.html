@@ -427,7 +427,7 @@
 
   <footer>
     <div class="d-flex">
-         <div class="music debug pl20 pt20 pb20 d-flex">
+         <div class="music pl20 d-flex">
            <img src="./img/sinister.jpeg" alt="sinister">
 
             <div>
@@ -445,37 +445,57 @@
         
 
         <div class="playbar">
-          <div class="play debug"> 
-            <i class="fa-solid fa-shuffle white"></i>
-            <i class="fa-solid fa-backward-step white"></i>
-            <i class="fa-regular fa-circle-play white"></i>
-            <i class="fa-solid fa-forward-step white"></i>
-            <i class="fa-solid fa-rotate-right white"></i>
-          </div> <!-- div play -->
-        
+          <div class="control">
+            <ul class="d-flex">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-shuffle white"></i>
+                </a>
+              </li>
 
-          <div>
-           
-            <div class="graybar">
-              <div class="whitebar">            
-              </div>
-            </div>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-backward-step white"></i>
+                </a>
+              </li>
 
-            <div class="minute" >
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-circle-play white"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-forward-step white"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-rotate-right white"></i>
+                </a>
+              </li>
+            </ul>
+          </div> <!-- div control -->
+
+          <div class="elapse">
+            <div class="d-flex">
               <span class="white bold">0.25</span>
-              <span class="white bold">4.35</span>
+
+              <div class="graybar">
+                <div class="whitebar">            
+                </div>
+              </div>
+
+              <span class="white bold">4.35</span> 
             </div>
-            
-            
+          </div> <!-- div di elapse -->
 
-          </div>
-          
-
-            
         </div>  <!-- playbar -->
 
           
-        <div class="music debug pl20 pt20 pb20 d-flex">
+        <div class="music dx debug pb20 d-flex">
             <div class="sound d-flex debug pt20 pb20">
              <i class="fa-solid fa-list white"></i>
              <i class="fa-solid fa-display white"></i>

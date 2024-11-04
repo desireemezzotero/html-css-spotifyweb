@@ -66,6 +66,15 @@ main , footer {
 
 
 /*** padding ***/
+.pr5{
+  padding-right: 5px;
+}
+
+.pl5{
+  padding-left: 5px;
+}
+
+
 .pl10 {
   padding-left: 10px;
 }
@@ -226,7 +235,6 @@ aside {
   width:250px;
 }
 
-
 .logo .ico {
   width:65%
 }
@@ -272,19 +280,29 @@ aside {
   vertical-align: middle;
 }
 
-
 /************* CARD *************/
 .card {
   width: calc(100% / 6 - 10px);
   position: relative;
 }
 
+.card .playcent:hover{
+  display:inline-block;
+} 
+
 .card img {
   width: 100%;
+  position: relative;
 }
 
 .border {
   border-radius: 50%;
+}
+
+.card-none {
+  position: absolute;
+  display:none;
+  background-color: rgba(14,25,25, 0.7);
 }
 
  
@@ -316,15 +334,15 @@ footer {
   margin: 0 10px;
 }
 
-.footer .elapse > div {
-  justify-content: space-between;
+.elapse {
+  justify-content: center;
+  align-items: center;
 }
 
 .graybar {
   background-color: rgb(118,120,124);
   border: 2px solid rgb(118,120,124);
   width: 50%;
-  margin: 0 auto;
   border-radius: 20px;
   height:2px;
 }
@@ -364,6 +382,7 @@ footer {
 .dx {
  justify-content: center;
 }
+
 .sound i {
   margin-right: 15px;
 }
@@ -390,17 +409,13 @@ footer {
 
 .card img:hover {
   opacity: .7;
-}
+} 
 
 .card img:hover::before{
   content: '\f144';
   position: absolute;
-  top:98px;
-  left:100px;
-  font-size: 70px;
   color:white
 }
-
 
 .button:hover {
   transform: scale(1.1);
@@ -415,6 +430,14 @@ footer {
   color:white
 }
 
+.library ul li:hover{
+  border-left: 3px solid greenyellow;
+}
+
+.nav ul li:hover {
+  border-bottom: 3px solid greenyellow;
+}
+
 footer .music span:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -424,10 +447,11 @@ footer .music i:hover{
   color:white
 }
 
-.playbar .play i:hover {
+.playbar .control i:hover {
   transform: scale(1.5);
   cursor: pointer;
 }
+
 
 .graybar:hover {
   cursor: pointer;
